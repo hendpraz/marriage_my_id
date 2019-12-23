@@ -1,13 +1,15 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-# Create your views here.
+# MAIN WEB PAGES
 
 def index(request):
-    return HttpResponse("Hello, you're at the marriage.my.id index")
+    return render(request, 'marriage/main-page/index.html')
+
+# CLIENT WEB PAGES
 
 def tania_dika_index(request):
-    return HttpResponse("Index page")
+    return HttpResponse("Tania-Dika index page")
 
 def tania_dika_invitation(request, guest_name):
     return HttpResponse("Hello, %s." % guest_name)
