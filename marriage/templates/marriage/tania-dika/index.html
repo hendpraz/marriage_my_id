@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tania-Dika Wedding</title>
-    <meta name="description" content="Free Bootstrap Theme by uicookies.com">
-    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    <meta name="description" content="Tania-Dika Wedding Invitation">
+    <meta name="keywords" content="wedding invitation, tania-dika, hendry prasetya">
     
     <link href="https://fonts.googleapis.com/css?family=Alice|Zilla+Slab:400,700" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'marriage/tania-dika/css/styles-merged.css' %}">
@@ -33,7 +33,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#" title="uiCookies:Wedding">Tania <em>&amp;</em> Dika</a>
+          <a class="navbar-brand" href="#" title="uiCookies:Wedding">Tania <em>&amp;</em>&nbsp; Dika</a>
         </div>
 
         <div id="navbar-collapse" class="navbar-collapse collapse">
@@ -42,7 +42,7 @@
             <li><a href="#" data-nav-section="groom-bride">Groom &amp; Bride</a></li>
             <li><a href="#" data-nav-section="when-where">When &amp; Where</a></li>
             <li><a href="#" data-nav-section="gallery">Gallery</a></li>
-            <li><a href="#" data-nav-section="rsvp">RSVP</a></li>
+            <li><a href="#" data-nav-section="rsvp">Notes/Wishes</a></li>
           </ul>
         </div>
       </div>
@@ -52,7 +52,7 @@
       <div class="container text-intro-wrap">
         <div class="row">
           <div class="col-md-12 text-center text-intro probootstrap-animate">
-            <h1>Tania <em>&amp;</em> Dika</h1>
+            <h1>Tania <em>&amp;</em>&nbsp; Dika</h1>
             <h2>Getting Married on January 19, 2020 &mdash; Bandar Lampung</h2>
           </div>
         </div>
@@ -125,9 +125,31 @@
             <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth question ran over her cheek, then she continued her way.</p>
           </div>
         </div>
+        <div class="row">
+          <br />
+          <style>
+            .google-maps {
+                position: relative;
+                padding-bottom: 50%; // This is the aspect ratio
+                height: 0;
+                overflow: hidden;
+            }
+            .google-maps iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100% !important;
+                height: 100% !important;
+            }
+        </style>
+          <div class="col-md-12 google-maps">
+            <iframe width="600" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ1dBOnbbbQC4RJY8c73qzrhE&key=AIzaSyCMSKW-vE6yLQ30Y38MJjCtf0IjSyIOoCw" allowfullscreen></iframe>
+          </div>
+        </div>
       </div>
     </div>
-    <div id="map"></div>
+    {% comment %} <div id="map"></div> {% endcomment %}
+   
 
     <section class="probootstrap-section" data-section="gallery">
       <div class="container">
@@ -280,10 +302,6 @@
 
     <script src="{% static 'marriage/tania-dika/js/scripts.min.js' %} "></script>
     <script src="{% static 'marriage/tania-dika/js/custom.min.js' %} "></script>
-
-    <!-- Google Map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="{% static 'marriage/tania-dika/js/google-map.js' %} "></script>
 
   </body>
 </html>

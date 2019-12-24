@@ -272,9 +272,10 @@
 	    year: 2020, // year
 	    month: 1, // month
 	    day: 19, // day
-	    hours: 12, // Default is 0 [0-23] integer
+	    hours: 7, // Default is 0 [0-23] integer
       minutes: 0, // Default is 0 [0-59] integer
-      seconds: 0, // Default is 0 [0-59] integer
+	  seconds: 0, // Default is 0 [0-59] integer
+	  enableUtc: false
 		});
 	};
 
