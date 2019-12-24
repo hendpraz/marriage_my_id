@@ -9,7 +9,7 @@ def index(request):
 # CLIENT WEB PAGES
 
 def tania_dika_index(request):
-    return HttpResponse("Tania-Dika index page")
+    return render(request, 'marriage/tania-dika/index.html')
 
 def tania_dika_invitation(request, guest_name):
-    return HttpResponse("Hello, %s." % guest_name)
+    return render(request, 'marriage/tania-dika/index.html')
