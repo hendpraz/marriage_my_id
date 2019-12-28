@@ -118,4 +118,4 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = 'https://marriagemyid.s3-ap-southeast-1.amazonaws.com/'
