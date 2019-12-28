@@ -17,7 +17,7 @@ def index(request):
 # CLIENT WEB PAGES
 
 def get_latest_messages():
-    return Guest.objects.exclude(message='').order_by('pub_date')
+    return Guest.objects.exclude(message='').exclude(message='-').order_by('pub_date')
 
 
 def get_guest_name(param_id, param_guest_name):
