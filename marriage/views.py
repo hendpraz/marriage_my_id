@@ -5,10 +5,6 @@ from marriage.models import Guest
 from django.http import Http404
 from django.http import HttpResponseRedirect
 
-# GLOBAL VAR
-
-dbname = 'db.sqlite3'
-
 # MAIN WEB PAGES
 
 def index(request):
