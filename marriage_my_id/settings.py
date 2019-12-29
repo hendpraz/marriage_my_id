@@ -83,7 +83,8 @@ DATABASES = {
         'NAME': str(os.getenv("MYSQL_DATABASE_NAME")),
         'USER': str(os.getenv("MYSQL_USER")),
         'PASSWORD': str(os.getenv("MYSQL_PASSWORD")), 
-        'HOST': str(os.getenv("MYSQL_HOST")),            
+        'HOST': str(os.getenv("MYSQL_HOST")),
+        'OPTIONS': {'charset': 'utf8mb4'},            
     }
 }
 
