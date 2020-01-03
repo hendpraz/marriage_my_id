@@ -23,7 +23,35 @@
     <![endif]-->
   </head>
   <body>
-    
+    <style>
+      @media screen and (max-width: 768px) {
+        #slide1 {
+          background-image: url({% static 'marriage/tania-dika/img/hero_bg_1.jpg' %});
+        }
+
+        #slide2 {
+          background-image: url({% static 'marriage/tania-dika/img/hero_bg_2.jpg' %});
+        }
+
+        #slide3 {
+          background-image: url({% static 'marriage/tania-dika/img/hero_bg_3.jpg' %})
+        }
+      }  
+
+      @media screen and (min-width: 769px) {
+        #slide1 {
+          background-image: url({% static 'marriage/tania-dika/img/hero_bg_1_desktop.jpg' %});
+        }
+
+        #slide2 {
+          background-image: url({% static 'marriage/tania-dika/img/hero_bg_2_desktop.jpg' %});
+        }
+
+        #slide3 {
+          background-image: url({% static 'marriage/tania-dika/img/hero_bg_3_desktop.jpg' %});
+        }
+      }  
+    </style>
     <!-- Fixed navbar -->
      <!-- navbar-fixed-top -->
     <nav class="navbar navbar-default probootstrap-navbar">
@@ -61,9 +89,9 @@
         </div>
       </div>
       <ul class="slides">
-        <li style="background-image: url(https://marriagemyid.s3-ap-southeast-1.amazonaws.com/marriage/tania-dika/img/hero_bg_1.jpg)" data></li>
-        <li style="background-image: url(https://marriagemyid.s3-ap-southeast-1.amazonaws.com/marriage/tania-dika/img/hero_bg_2.jpg)"></li>
-        <li style="background-image: url(https://marriagemyid.s3-ap-southeast-1.amazonaws.com/marriage/tania-dika/img/hero_bg_3.jpg)"></li>
+        <li id="slide1" data></li>
+        <li id="slide2"></li>
+        <li id="slide3"></li>
       </ul>
     </section>
 
@@ -180,20 +208,20 @@
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="row probootstrap-gutter30">
               <div class="col-md-6 probootstrap-animate">
-                <a class="probootstrap-image image-popup" href="{% static 'marriage/tania-dika/img/img_3.jpg' %} " style="background-image: url(https://marriagemyid.s3-ap-southeast-1.amazonaws.com/marriage/tania-dika/img/img_3.jpg)">
-                  <div class="probootstrap-image-for-popup"><img src="{% static 'marriage/tania-dika/img/img_3.jpg' %} " alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
+                <a class="probootstrap-image image-popup" href="{% static 'marriage/tania-dika/img/Love Story 1.jpeg' %}" style="background-image: url({% static 'marriage/tania-dika/img/Love Story 1.jpeg' %})">
+                  <div class="probootstrap-image-for-popup"><img src="{% static 'marriage/tania-dika/img/Love Story 1.jpeg' %}" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
                 </a>
               </div>
               <div class="col-md-6 probootstrap-animate">
-                <a class="probootstrap-image image-popup" href="{% static 'marriage/tania-dika/img/img_2.jpg' %} " style="background-image: url(https://marriagemyid.s3-ap-southeast-1.amazonaws.com/marriage/tania-dika/img/img_2.jpg)">
-                  <div class="probootstrap-image-for-popup"><img src="{% static 'marriage/tania-dika/img/img_2.jpg' %} " alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
+                <a class="probootstrap-image image-popup" href="{% static 'marriage/tania-dika/img/Love Story 2.jpeg' %}" style="background-image: url({% static 'marriage/tania-dika/img/Love Story 2.jpeg' %})">
+                  <div class="probootstrap-image-for-popup"><img src="{% static 'marriage/tania-dika/img/Love Story 2.jpeg' %}" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
                 </a>
               </div>
             </div>
             <div class="row probootstrap-gutter30">
               <div class="col-md-12 probootstrap-animate">
-                <a class="probootstrap-image image-popup" href="{% static 'marriage/tania-dika/img/img_1.jpg' %} " style="background-image: url(https://marriagemyid.s3-ap-southeast-1.amazonaws.com/marriage/tania-dika/img/img_1.jpg)">
-                  <div class="probootstrap-image-for-popup"><img src="{% static 'marriage/tania-dika/img/img_1.jpg' %} " alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
+                <a class="probootstrap-image image-popup" href="{% static 'marriage/tania-dika/img/Love Story 3.jpeg' %}" style="background-image: url({% static 'marriage/tania-dika/img/Love Story 3.jpeg' %})">
+                  <div class="probootstrap-image-for-popup"><img src="{% static 'marriage/tania-dika/img/Love Story 3.jpeg' %}" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
                 </a>
               </div>
             </div>
@@ -203,20 +231,20 @@
               <div class="col-md-6">
                 <div class="row probootstrap-gutter30">
                   <div class="col-md-12 probootstrap-animate">
-                    <a class="probootstrap-image image-popup" href="{% static 'marriage/tania-dika/img/img_4.jpg' %} " style="background-image: url(https://marriagemyid.s3-ap-southeast-1.amazonaws.com/marriage/tania-dika/img/img_4.jpg)">
-                      <div class="probootstrap-image-for-popup"><img src="{% static 'marriage/tania-dika/img/img_4.jpg' %} " alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
+                    <a class="probootstrap-image image-popup" href="{% static 'marriage/tania-dika/img/Love Story 4.jpeg' %}" style="background-image: url({% static 'marriage/tania-dika/img/Love Story 4.jpeg' %})">
+                      <div class="probootstrap-image-for-popup"><img src="{% static 'marriage/tania-dika/img/Love Story 4.jpeg' %}" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
                     </a>
                   </div>
                   <div class="col-md-12 probootstrap-animate">
-                    <a class="probootstrap-image image-popup" href="{% static 'marriage/tania-dika/img/img_5.jpg' %} " style="background-image: url(https://marriagemyid.s3-ap-southeast-1.amazonaws.com/marriage/tania-dika/img/img_5.jpg)">
-                      <div class="probootstrap-image-for-popup"><img src="{% static 'marriage/tania-dika/img/img_5.jpg' %} " alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
+                    <a class="probootstrap-image image-popup" href="{% static 'marriage/tania-dika/img/Love Story 5.jpeg' %}" style="background-image: url({% static 'marriage/tania-dika/img/Love Story 5.jpeg' %})">
+                      <div class="probootstrap-image-for-popup"><img src="{% static 'marriage/tania-dika/img/Love Story 5.jpeg' %}" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
                     </a>
                   </div>
                 </div>
               </div>
               <div class="col-md-6 probootstrap-animate">
-                <a class="probootstrap-image  height-2x image-popup" href="{% static 'marriage/tania-dika/img/img_6.jpg' %} " style="background-image: url(https://marriagemyid.s3-ap-southeast-1.amazonaws.com/marriage/tania-dika/img/img_6.jpg)">
-                  <div class="probootstrap-image-for-popup"><img src="{% static 'marriage/tania-dika/img/img_6.jpg' %} " alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
+                <a class="probootstrap-image  height-2x image-popup" href="{% static 'marriage/tania-dika/img/Love Story 6.jpeg' %} " style="background-image: url({% static 'marriage/tania-dika/img/Love Story 6.jpeg' %})">
+                  <div class="probootstrap-image-for-popup"><img src="{% static 'marriage/tania-dika/img/Love Story 6.jpeg' %}" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
                 </a>
               </div>
             </div>
@@ -230,20 +258,20 @@
               <div class="col-md-6">
                 <div class="row probootstrap-gutter30">
                   <div class="col-md-12 probootstrap-animate">
-                    <a class="probootstrap-image image-popup" href="{% static 'marriage/tania-dika/img/img_1.jpg' %} " style="background-image: url(https://marriagemyid.s3-ap-southeast-1.amazonaws.com/marriage/tania-dika/img/img_1.jpg)">
-                      <div class="probootstrap-image-for-popup"><img src="{% static 'marriage/tania-dika/img/img_1.jpg' %} " alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
+                    <a class="probootstrap-image image-popup" href="{% static 'marriage/tania-dika/img/Love Story 9.jpeg' %}" style="background-image: url({% static 'marriage/tania-dika/img/Love Story 9.jpeg' %})">
+                      <div class="probootstrap-image-for-popup"><img src="{% static 'marriage/tania-dika/img/Love Story 9.jpeg' %} " alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
                     </a>
                   </div>
                   <div class="col-md-12 probootstrap-animate">
-                    <a class="probootstrap-image image-popup" href="{% static 'marriage/tania-dika/img/img_2.jpg' %} " style="background-image: url(https://marriagemyid.s3-ap-southeast-1.amazonaws.com/marriage/tania-dika/img/img_2.jpg)">
-                      <div class="probootstrap-image-for-popup"><img src="{% static 'marriage/tania-dika/img/img_2.jpg' %} " alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
+                    <a class="probootstrap-image image-popup" href="{% static 'marriage/tania-dika/img/Love Story 8.jpeg' %}" style="background-image: url({% static 'marriage/tania-dika/img/Love Story 8.jpeg' %})">
+                      <div class="probootstrap-image-for-popup"><img src="{% static 'marriage/tania-dika/img/Love Story 8.jpeg' %}" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
                     </a>
                   </div>
                 </div>
               </div>
               <div class="col-md-6 probootstrap-animate">
-                <a class="probootstrap-image  height-2x image-popup" href="{% static 'marriage/tania-dika/img/img_3.jpg' %} " style="background-image: url(https://marriagemyid.s3-ap-southeast-1.amazonaws.com/marriage/tania-dika/img/img_3.jpg)">
-                  <div class="probootstrap-image-for-popup"><img src="{% static 'marriage/tania-dika/img/img_3.jpg' %} " alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
+                <a class="probootstrap-image  height-2x image-popup" href="{% static 'marriage/tania-dika/img/Love Story 7.jpeg' %}" style="background-image: url({% static 'marriage/tania-dika/img/Love Story 7.jpeg' %})">
+                  <div class="probootstrap-image-for-popup"><img src="{% static 'marriage/tania-dika/img/Love Story 7.jpeg' %}" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
                 </a>
               </div>
             </div>
@@ -251,20 +279,20 @@
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="row probootstrap-gutter30">
               <div class="col-md-6 probootstrap-animate">
-                <a class="probootstrap-image image-popup" href="{% static 'marriage/tania-dika/img/img_4.jpg' %} " style="background-image: url(https://marriagemyid.s3-ap-southeast-1.amazonaws.com/marriage/tania-dika/img/img_4.jpg)">
-                  <div class="probootstrap-image-for-popup"><img src="{% static 'marriage/tania-dika/img/img_4.jpg' %} " alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
+                <a class="probootstrap-image image-popup" href="{% static 'marriage/tania-dika/img/Love Story 10.jpeg' %}" style="background-image: url({% static 'marriage/tania-dika/img/Love Story 10.jpeg' %})">
+                  <div class="probootstrap-image-for-popup"><img src="{% static 'marriage/tania-dika/img/Love Story 10.jpeg' %}" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
                 </a>
               </div>
               <div class="col-md-6 probootstrap-animate">
-                <a class="probootstrap-image image-popup" href="{% static 'marriage/tania-dika/img/img_5.jpg' %} " style="background-image: url(https://marriagemyid.s3-ap-southeast-1.amazonaws.com/marriage/tania-dika/img/img_5.jpg)">
-                  <div class="probootstrap-image-for-popup"><img src="{% static 'marriage/tania-dika/img/img_5.jpg' %} " alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
+                <a class="probootstrap-image image-popup" href="{% static 'marriage/tania-dika/img/Love Story 11.jpeg' %}" style="background-image: url({% static 'marriage/tania-dika/img/Love Story 11.jpeg' %})">
+                  <div class="probootstrap-image-for-popup"><img src="{% static 'marriage/tania-dika/img/Love Story 11.jpeg' %}" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
                 </a>
               </div>
             </div>
             <div class="row probootstrap-gutter30">
               <div class="col-md-12 probootstrap-animate">
-                <a class="probootstrap-image image-popup" href="{% static 'marriage/tania-dika/img/img_6.jpg' %} " style="background-image: url(https://marriagemyid.s3-ap-southeast-1.amazonaws.com/marriage/tania-dika/img/img_6.jpg)">
-                  <div class="probootstrap-image-for-popup"><img src="{% static 'marriage/tania-dika/img/img_6.jpg' %} " alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
+                <a class="probootstrap-image image-popup" href="{% static 'marriage/tania-dika/img/Love Story 12.jpeg' %}" style="background-image: url({% static 'marriage/tania-dika/img/Love Story 12.jpeg' %})">
+                  <div class="probootstrap-image-for-popup"><img src="{% static 'marriage/tania-dika/img/Love Story 12.jpeg' %}" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
                 </a>
               </div>
             </div>
