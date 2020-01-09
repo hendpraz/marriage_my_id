@@ -10,6 +10,7 @@
     <meta name="keywords" content="wedding invitation, tania-dika, hendry prasetya">
     
     <link href="https://fonts.googleapis.com/css?family=Alice|Zilla+Slab:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="{% static 'marriage/tania-dika/css/styles-merged.css' %}">
     <link rel="stylesheet" href="{% static 'marriage/tania-dika/css/style.css' %}">
 
@@ -50,11 +51,121 @@
         #slide3 {
           background-image: url({% static 'marriage/tania-dika/img/hero_bg_3_desktop.jpg' %});
         }
-      }  
+      }
     </style>
+
+    {% if guest_name %}
+      <style>
+        .overlay {
+          height: 0%;
+          width: 100%;
+          position: fixed;
+          z-index: 10;
+          top: 0;
+          left: 0;
+          background-color: rgba(0,0,0, 0.95);
+          overflow-y: hidden;
+          transition: 0.5s;
+        }
+
+        .overlay-content {
+          position: relative;
+          top: 25%;
+          width: 100%;
+          text-align: center;
+          margin-top: 30px;
+        }
+
+        .overlay a {
+          padding: 8px;
+          text-decoration: none;
+          font-size: 36px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+        }
+
+        .overlay a:hover, .overlay a:focus {
+          color: #f1f1f1;
+        }
+
+        .overlay .closebtn {
+          position: absolute;
+          top: 20px;
+          right: 45px;
+          font-size: 60px;
+        }
+
+        @media screen and (max-height: 450px) {
+          .overlay {overflow-y: auto;}
+          .overlay a {font-size: 20px}
+          .overlay .closebtn {
+          font-size: 40px;
+          top: 15px;
+          right: 35px;
+          }
+        }
+      </style>
+
+      <div id="myNav" class="overlay">
+        <div class="overlay-content">
+          <h2>Tania <em>&amp;</em> Dika</h2>
+          <h4>Dear {{ guest_name }},<br />would you like to open the invitation?</h4>
+          <button type="button" class="btn btn-primary" onclick="closeNav()">Open Invitation</button>
+          <br />
+          <br />
+          <p>
+            <i class="fas fa-music"></i> For The Rest of My Life - Maher Zain
+          </p>
+        </div>
+      </div>
+
+      <script>
+        document.getElementById("myNav").style.height = "100%";
+        $('html').css('overflow', 'hidden');
+
+        function closeNav() {
+          document.getElementById("myNav").style.height = "0%";
+          $('html').css('overflow', 'auto');
+          $('nav').css('display', 'block');
+        }
+      </script>
+    {% endif %}
+
+    <!-- Music -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <div id="video" style="display:none"></div>
+    <script>
+      var player;
+
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('video', {
+          width : 600,
+          height : 400,
+          videoId : 'PHbZ9SXHJwA',
+          playerVars: {
+            'color' : 'white',
+            'loop' : 1,
+            'origin' : window.location.origin,
+          },
+          events: {
+            'onReady': onPlayerReady,
+          }
+        });
+      }
+    </script>
+
     <!-- Fixed navbar -->
      <!-- navbar-fixed-top -->
-    <nav class="navbar navbar-default probootstrap-navbar">
+    {% if guest_name %}
+    <nav id="myNavbar" class="navbar navbar-default probootstrap-navbar" style="display : none">
+    {% else %}
+    <nav id="myNavbar" class="navbar navbar-default probootstrap-navbar">
+    {% endif %}
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
